@@ -19,7 +19,7 @@ temp_en = None
 temp_de = None
 
 stopword_dict = set(stopwords.words('english'))
-en_model = StanfordCoreNLP('/gemini/code/stanford-corenlp-full-2018-02-27',quiet=True)
+en_model = StanfordCoreNLP('stanford-corenlp-full-2018-02-27',quiet=True)
 tokenizer = None
 
 GRAMMAR = """  NP:
