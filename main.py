@@ -80,19 +80,19 @@ class Logger(object):
         level = logging.INFO if level == 'info' else logging.DEBUG
         self.logger = logging.getLogger(filename)
         self.logger.propagate = False
-        # # format_str = logging.Formatter(fmt)  # 设置日志格式
+        # # format_str = logging.Formatter(fmt)  
         # if args.local_rank == 0 :
         #     level = level
         # else:
         #     level = 'warning'
-        self.logger.setLevel(level)  # 设置日志级别
+        self.logger.setLevel(level)  # 
 
         th = logging.FileHandler(filename,'w')
         # formatter = logging.Formatter('%(asctime)s => %(name)s * %(levelname)s : %(message)s')
         # th.setFormatter(formatter)
 
-        #self.logger.addHandler(sh)  # 代表在屏幕上输出，如果注释掉，屏幕将不输出
-        self.logger.addHandler(th)  # 代表在log文件中输出，如果注释掉，将不再向文件中写入数据
+        #self.logger.addHandler(sh)  # 
+        self.logger.addHandler(th)  # 
         
 if __name__ == "__main__":
     torch.multiprocessing.set_sharing_strategy('file_system')

@@ -396,7 +396,7 @@ def data_process(setting_dict, dataset_dir, dataset_name):
             tokens = l.split()
             labels_s.append(' '.join(porter.stem(t) for t in tokens))
 
-        doc = ' '.join(doc.split()[:MAX_LEN])  # 这里可以作为超参数调整
+        doc = ' '.join(doc.split()[:MAX_LEN])  
         labels_stemed.append(labels_s)
         doc_list.append(doc)
         
