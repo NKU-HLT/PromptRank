@@ -1,6 +1,7 @@
 # PromptRank
 
-This is code of our paper PromptRank: Unsupervised Keyphrase Extraction using Prompt. The code is modified based on MDERank. Data is from OpenNMT-kpg-release and SIFRank. (Inspec, DUC2001, SemEval2017 are from SIFRank).
+This is code of our paper PromptRank: Unsupervised Keyphrase Extraction using Prompt. 
+<!-- The code is modified based on MDERank. Data is from OpenNMT-kpg-release and SIFRank. (Inspec, DUC2001, SemEval2017 are from SIFRank). -->
 
 ## Environment
 
