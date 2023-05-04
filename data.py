@@ -18,8 +18,10 @@ enable_filter = None
 temp_en = None
 temp_de = None
 
+StanfordCoreNLP_path = '../../stanford-corenlp-full-2018-02-27'
+
 stopword_dict = set(stopwords.words('english'))
-en_model = StanfordCoreNLP('stanford-corenlp-full-2018-02-27',quiet=True)
+en_model = StanfordCoreNLP(StanfordCoreNLP_path, quiet=True)
 tokenizer = None
 
 GRAMMAR = """  NP:

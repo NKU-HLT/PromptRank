@@ -1,3 +1,5 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import argparse
 import logging
 import time
@@ -8,8 +10,7 @@ from inference import keyphrases_selection
 from torch.utils.data import DataLoader
 from transformers import T5ForConditionalGeneration
 
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
 
 def get_setting_dict():
     setting_dict = {}

@@ -1,7 +1,6 @@
 # PromptRank
 
 This is code of our paper PromptRank: Unsupervised Keyphrase Extraction using Prompt. 
-<!-- The code is modified based on MDERank. Data is from OpenNMT-kpg-release and SIFRank. (Inspec, DUC2001, SemEval2017 are from SIFRank). -->
 
 ## Environment
 
@@ -15,16 +14,22 @@ transformers 4.23
 
 ## Usage
 
+First, you should download Stanford CoreNLP and modify the file path in data.py.
+
+```python
+StanfordCoreNLP_path = '../../stanford-corenlp-full-2018-02-27'
+```
+
 We use run.sh script to run PromptRank for a specfic dataset.
 
 ```
-sh run.sh
+bash run.sh
 ```
 
 We use run_all.sh script to run PromptRank for all six datasets and the results will be summarized in result.txt by summary.py.
 
 ```
-sh run_all.sh
+bash run_all.sh
 ```
 
 The settings of PromptRank can be modified in main.py as follows:
