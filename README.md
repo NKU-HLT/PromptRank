@@ -1,6 +1,6 @@
 # PromptRank
 
-This is code of our paper PromptRank: Unsupervised Keyphrase Extraction using Prompt. 
+This is code of our paper [PromptRank: Unsupervised Keyphrase Extraction using Prompt.](https://arxiv.org/abs/2305.04490) 
 
 ## Environment
 
@@ -60,4 +60,13 @@ The performance of PromptRank is shown as follows. See the performance of ${\rm 
 | 10   | 37.88  | 37.76       | 20.66       | 31.59   | 16.71    | 20.13 | 27.46 |
 | 15   | 38.17  | 41.57       | 21.35       | 31.01   | 16.02    | 20.12 | 28.04 |
 
+## Citation
 
+```
+@article{kong2023promptrank,
+  title={PromptRank: Unsupervised Keyphrase Extraction Using Prompt},
+  author={Kong, Aobo and Zhao, Shiwan and Chen, Hao and Li, Qicheng and Qin, Yong and Sun, Ruiqi and Bai, Xiaoyan},
+  journal={arXiv preprint arXiv:2305.04490},
+  year={2023}
+}
+```
